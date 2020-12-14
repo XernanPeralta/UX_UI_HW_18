@@ -1,0 +1,167 @@
+body {
+    gap: 50px;
+    padding: 30px;
+}
+p {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 750px;
+}
+
+/*Logo and NavBar*/
+.navigation {
+    align-content: center;
+}
+.logoBar {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+.navBar ul {
+    display: flex;
+    gap: 30px;
+    position: auto;
+}
+.navBar li {
+    list-style: none;
+    
+}
+.navBar a {
+    text-decoration: none;
+    color: #019fca;
+    font-size: 24px;
+}
+.grid-containerlogoBar {
+    display: grid;
+    grid-template-areas:
+        'logoBar navBar';
+}
+
+/*HeroSection Section */
+.heroImg {
+    margin-left: 100px;
+    align-self: left;
+    border-radius: 1%;
+}
+.grid-containerheroSection {
+    display: grid;
+    grid-template-areas:
+        'heroImg heroContent';
+}
+.heroContent {
+    text-align: center;
+}
+.heroImg {
+    background-color: red;
+}
+
+/*AboutMe Section*/
+.aboutMe {
+    text-align: center;
+}
+.aboutMephoto {
+    object-fit: cover;
+    width: 1024px;
+    height: 300px;
+}
+/*width is 1821px*/
+
+/*myBackground Section*/
+.myBackground {
+    text-align: center;
+}
+.myBackgroundphoto {
+    object-fit: cover;
+    object-position: 0 38%;
+    width: 1024px;
+    height: 300px;
+}
+
+/*skillsandExpertise Section*/
+.skillsandExpertise {
+    text-align: center;
+}
+.grid-containerskillsandExpertise {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 2px;
+}
+.grid-itemskillsandExpertise {
+    padding: 5px;
+    text-align: center;
+}
+
+/*myWorks Section*/
+.grid-containermyWorks {
+    display: grid;
+    grid-template-areas:
+        'column1 column2 column3';
+    gap: 9px;
+}
+.myWorks {
+    text-align: center;
+}
+.column1photo {
+    object-fit: cover;
+    object-position: 0 38%;
+    width: 596px;
+    height: 300px;
+}
+.column2photo{
+    object-fit: cover;
+    object-position: 0 38%;
+    width: 596px;
+    height: 300px;
+}
+.column3photo{
+    object-fit: cover;
+    object-position: 0 38%;
+    width: 596px;
+    height: 300px;
+}
+
+.column1 {
+    border: 3px solid green;
+}
+.column2 {
+    border: 3px solid yellow;
+}
+.column3 {
+    border: 3px solid purple;
+}
+
+/*letsConnect Section*/
+.letsConnect {
+    text-align: center;
+}
+
+/*Footer Section*/
+.footer {
+    width: 100%;
+    margin: auto;
+}
+.footer ul {
+    display: flex;
+    gap: 30px;
+}
+.footer li {
+    list-style: none;
+    text-align: center;
+}
+.footer a {
+    text-decoration: none;
+    color: #019fca;
+    font-size: 24px;
+}
+
+/*Border Color Test*/
+.heroSection,
+.aboutMe,
+.myBackground,
+.skillsandExpertise,
+.myWorks,
+.letsConnect,
+.footer,
+.navigation {
+    border: 3px solid red;
+}
