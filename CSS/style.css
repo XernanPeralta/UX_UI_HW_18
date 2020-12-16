@@ -48,6 +48,8 @@ h6 {
     padding-right: 20px;
     border-radius: 30px;
     cursor: pointer;
+    width: 300px;
+    height: 50px;
 }
 .button2 {
     background-color:  #019fca;
@@ -75,10 +77,10 @@ h6 {
     display: flex;
     gap: 30px;
     position: auto;
+    /* align-items: center; */
 }
 .navBar li {
     list-style: none;
-    
 }
 .navBar a {
     text-decoration: none;
@@ -86,31 +88,41 @@ h6 {
     font-size: 24px;
 }
 .grid-containerlogoBar {
-    display: grid;
-    grid-template-areas:
-        'logoBar navBar';
-        display: flex;
+    display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 
 /*HeroSection Section */
-.heroImg {
+/* .heroImg { */
     /* margin-left: 100px; */
-    align-self: left;
-    border-radius: 1%;
-}
+    /* border-radius: 1%; */
+    /* height: 100%; */
+    /* width: 100%; */
+/* } */
 .grid-containerheroSection {
-    display: grid;
-    grid-template-areas:
-        'heroImg heroContent';
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    flex-flow: wrap;
 }
 .heroContent {
     text-align: center;
     padding-top: 120px;
+    width: 600px;
+    border: 3px solid red;
 }
 .heroImg {
     background-color: red;
+    border: 3px solid red;
+    width: 600px;
+    height: 600px;
+}
+.heroImg img {
+    width: 100%;
+    height: 100%;
 }
 
 /*AboutMe Section*/
@@ -153,29 +165,54 @@ h6 {
 }
 
 /*myWorks Section*/
-.grid-containermyWorks {
-    display: grid;
-    grid-template-areas:
-        'column1 column2 column3';
-    gap: 9px;
+/* .grid-containermyWorks { */
+    /* display: grid; */
+    /* grid-template-areas: */
+        /* 'column1 column2 column3'; */
+    /* gap: 9px; */
     /* max-height: 200px; */
+/* } */
+.grid-containermyWorks {
+    display: flex;
+    gap: 9px;
+    flex-flow: wrap;
+    justify-content: space-between;
 }
 .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     border: 1px solid lightgray;
     background-color: lightgray;
-    padding-bottom: 25px;
+    padding: 10px;
+    /* height: 100%; */
+    /* padding-bottom: 25px; */
+    height: 370px;
+}
+.container * {
+    margin: 0;
+    padding: 0;
 }
 .myWorks {
     text-align: center;
     padding-top: 100px;
 }
-.column1photo {
-    object-fit: cover;
-    object-position: 0 38%;
-    width: 596px;
+.containerImagemyworks {
+    /* width: 500px; */
     height: 300px;
 }
-.column2photo{
+.column1photo,
+.column2photo,
+.column3photo {
+    object-fit: cover;
+    object-position: 0 38%;
+    /* width: 596px; */
+    /* height: 300px; */
+    width: 100%;
+    height: 100%;
+}
+/* .column2photo{
     object-fit: cover;
     object-position: 0 38%;
     width: 596px;
@@ -186,17 +223,20 @@ h6 {
     object-position: 0 38%;
     width: 596px;
     height: 300px;
-}
+} */
 
-.column1 {
-    border: 1px solid lightgray;
-}
-.column2 {
-    border: 1px solid lightgray;
-}
+.column1,
+.column2,
 .column3 {
     border: 1px solid lightgray;
+    width: 550px;
 }
+/* .column2 { */
+    /* border: 1px solid lightgray; */
+/* } */
+/* .column3 { */
+    /* border: 1px solid lightgray; */
+/* } */
 
 /*letsConnect Section*/
 .letsConnect {
@@ -211,7 +251,10 @@ h6 {
 }
 .footer ul {
     display: flex;
-    gap: 30px;
+    justify-content: space-around;
+    /* gap: 30px; */
+    padding-left: 100px;
+    padding-right: 100px;
 }
 .footer li {
     list-style: none;
